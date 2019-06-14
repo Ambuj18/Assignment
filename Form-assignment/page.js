@@ -123,7 +123,7 @@ window.onload = function() {
                     document.getElementById("g").focus();
                     document.getElementById("g").style.backgroundColor = "red";
                     document.getElementById("g").value = "error phone no should be 10 digits";
-                    console.log((a.value).length)
+                  
                    }
 
                    
@@ -176,10 +176,41 @@ window.onload = function() {
                         education = document.getElementById("select").value;
                       
                         hobbies = "";
+                    
+                        
+                        let mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+
+
                         if(fname == "" || mname == "" || lname == "" || email == "" || phno == "" || addr == "" || dob == "" || education == "")
                         {
                         alert("Please enter the required fields!");
                         }
+
+                        else if (!(email.match(mailformat))){ document.getElementById("e1").style.borderColor = "red";
+                        alert ("pls enter correct email required ");
+                        document.getElementById("g").focus();
+                        document.getElementById("g").style.backgroundColor = "red";
+                        document.getElementById("g").value = "error email correct required";
+                                                                   }
+
+                        else if(isNaN(phno))      {
+                                                        
+                    alert ("pls enter digits only  ");
+                    document.getElementById("p1").style.borderColor = "red";
+                    document.getElementById("g").focus();
+                    document.getElementById("g").style.backgroundColor = "red";
+                    document.getElementById("g").value = "error phone no should be  digits only";
+                                                    }      
+                                                    
+                                                    
+                         else if((phno).length!==10)  {
+                          document.getElementById("p1").style.borderColor = "red";
+                          alert ("pls enter correct phone no  required ");
+                          document.getElementById("g").focus();
+                          document.getElementById("g").style.backgroundColor = "red";
+                          document.getElementById("g").value = "error phone no should be 10 digits";
+
+                         }                         
 
                         else{
                             if (mname=="nil"||mname=="Nil")mname="";
