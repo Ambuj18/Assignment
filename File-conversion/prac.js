@@ -1,7 +1,7 @@
 // Check for the File API support.
 if (window.File && window.FileReader && window.FileList && window.Blob) {
 
- alert("pls select the file");
+ alert("pls choose or browse  the file");
 
     document.getElementById('files').addEventListener('change', handleFileSelect, false);
   } else {
