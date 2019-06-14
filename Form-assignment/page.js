@@ -176,11 +176,16 @@ window.onload = function() {
                         education = document.getElementById("select").value;
                       
                         hobbies = "";
+                         
+                         let mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+                         
+                         
                         if(fname == "" || mname == "" || lname == "" || email == "" || phno == "" || addr == "" || dob == "" || education == "")
                         {
                         alert("Please enter the required fields!");
                         }
-
+                        elseif (!(a.value .match(mailformat))){ alert("pls enter valid email");
+                                                                   }
                         else{
                             if (mname=="nil"||mname=="Nil")mname="";
                             fullname = fname +" "+ mname +" "+ lname;
