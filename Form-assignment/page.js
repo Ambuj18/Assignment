@@ -187,6 +187,7 @@ window.onload = function() {
                         data = "<table><tr><th>Name</th><td>" +fullname+ "</td></tr>";
                         data += "<tr><th>Email</th><td>" +email+ "</td></tr>";
                         data += "<tr><th>Phone No.</th><td>" +phno+ "</td></tr>";
+                        data += "<tr><th>Date-of-Birth</th><td>" +dob+ "</td></tr>";
                         if(document.getElementById("chckmale").checked)
                         {
                         data += "<tr><th>Gender</th><td>Male</td></tr>";
