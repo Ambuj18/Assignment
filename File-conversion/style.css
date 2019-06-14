@@ -1,0 +1,15 @@
+body{
+
+background-color: #DCDCDC;
+
+
+}
+.con{
+    grid-template-columns: 10% 80% 10%;
+    display:grid;
+}
+.main{
+
+    background-color: 	#FFFFFF;
+
+}

@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<title>Assignment2</title>
+</head>
+<body class="#e8eaf6 indigo lighten-5">
+<div class="container"><br/><br/><br/>
+<div class="row">
+File Browse: <div class="col-lg-4"><input type="file" id="files" name="txtfile"></div>
+<div class="col-lg-2 col-lg-offset-3"><button type="button" id="btn" name="btn" onclick="h()"  class="btn btn-outline-info">Convert</button></div>
+</div><br/><br/>
+<div class="row">
+<div class="col-lg-9"><textarea id="base64" name="txtdesc" rows="25" cols="100" style="border:inset 4px rgb(55, 0, 255);"></textarea> </div>
+</div><br/><br/>
+<div class="row">
+File Type: <div class="col-lg-4">
+<select id="select" name="txtselect" onfocusout="check()">
+<option value="pdf">PDF</option>
+<option value="doc">DOC</option>
+<option value="txt">TXT</option>
+</select>
+</div>
+<div class="col-lg-2 col-lg-offset-3"><button type="button" class="btn btn-primary" id="dwn-btn" name="btn" onclick="">Download</button></div>
+</div>
+</div>
+
+
+
+<script src="prac.js"></script>
+</body>
+</html>
